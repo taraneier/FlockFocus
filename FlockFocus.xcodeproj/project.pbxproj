@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C46DD6C619709082005E3F27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46DD6C519709082005E3F27 /* Foundation.framework */; };
+		C46DD6C819709082005E3F27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46DD6C719709082005E3F27 /* CoreGraphics.framework */; };
+		C46DD6CA19709082005E3F27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46DD6C919709082005E3F27 /* UIKit.framework */; };
+		C46DD6CC19709082005E3F27 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46DD6CB19709082005E3F27 /* CoreData.framework */; };
+		C46DD6D219709082005E3F27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C46DD6D019709082005E3F27 /* InfoPlist.strings */; };
+		C46DD6D419709082005E3F27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C46DD6D319709082005E3F27 /* main.m */; };
+		C46DD6D819709082005E3F27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C46DD6D719709082005E3F27 /* AppDelegate.m */; };
+		C46DD6DB19709083005E3F27 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46DD6D919709083005E3F27 /* Main_iPhone.storyboard */; };
+		C46DD6DE19709083005E3F27 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46DD6DC19709083005E3F27 /* Main_iPad.storyboard */; };
+		C46DD6E119709083005E3F27 /* FlockFocus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C46DD6DF19709083005E3F27 /* FlockFocus.xcdatamodeld */; };
+		C46DD6E419709083005E3F27 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C46DD6E319709083005E3F27 /* MasterViewController.m */; };
+		C46DD6E719709083005E3F27 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C46DD6E619709083005E3F27 /* DetailViewController.m */; };
+		C46DD6E919709083005E3F27 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C46DD6E819709083005E3F27 /* Images.xcassets */; };
+		C46DD6F019709083005E3F27 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46DD6EF19709083005E3F27 /* XCTest.framework */; };
+		C46DD6F119709083005E3F27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46DD6C519709082005E3F27 /* Foundation.framework */; };
+		C46DD6F219709083005E3F27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46DD6C919709082005E3F27 /* UIKit.framework */; };
+		C46DD6F319709083005E3F27 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46DD6CB19709082005E3F27 /* CoreData.framework */; };
+		C46DD6FB19709083005E3F27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C46DD6F919709083005E3F27 /* InfoPlist.strings */; };
+		C46DD6FD19709083005E3F27 /* FlockFocusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C46DD6FC19709083005E3F27 /* FlockFocusTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C46DD6F419709083005E3F27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C46DD6BA19709082005E3F27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C46DD6C119709082005E3F27;
+			remoteInfo = FlockFocus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C46DD6C219709082005E3F27 /* FlockFocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlockFocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C46DD6C519709082005E3F27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C46DD6C719709082005E3F27 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C46DD6C919709082005E3F27 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C46DD6CB19709082005E3F27 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C46DD6CF19709082005E3F27 /* FlockFocus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlockFocus-Info.plist"; sourceTree = "<group>"; };
+		C46DD6D119709082005E3F27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C46DD6D319709082005E3F27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C46DD6D519709082005E3F27 /* FlockFocus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlockFocus-Prefix.pch"; sourceTree = "<group>"; };
+		C46DD6D619709082005E3F27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C46DD6D719709082005E3F27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C46DD6DA19709083005E3F27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		C46DD6DD19709083005E3F27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		C46DD6E019709083005E3F27 /* FlockFocus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlockFocus.xcdatamodel; sourceTree = "<group>"; };
+		C46DD6E219709083005E3F27 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		C46DD6E319709083005E3F27 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		C46DD6E519709083005E3F27 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		C46DD6E619709083005E3F27 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		C46DD6E819709083005E3F27 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C46DD6EE19709083005E3F27 /* FlockFocusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlockFocusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C46DD6EF19709083005E3F27 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C46DD6F819709083005E3F27 /* FlockFocusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlockFocusTests-Info.plist"; sourceTree = "<group>"; };
+		C46DD6FA19709083005E3F27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C46DD6FC19709083005E3F27 /* FlockFocusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlockFocusTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C46DD6BF19709082005E3F27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46DD6C819709082005E3F27 /* CoreGraphics.framework in Frameworks */,
+				C46DD6CC19709082005E3F27 /* CoreData.framework in Frameworks */,
+				C46DD6CA19709082005E3F27 /* UIKit.framework in Frameworks */,
+				C46DD6C619709082005E3F27 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C46DD6EB19709083005E3F27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46DD6F019709083005E3F27 /* XCTest.framework in Frameworks */,
+				C46DD6F319709083005E3F27 /* CoreData.framework in Frameworks */,
+				C46DD6F219709083005E3F27 /* UIKit.framework in Frameworks */,
+				C46DD6F119709083005E3F27 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C46DD6B919709082005E3F27 = {
+			isa = PBXGroup;
+			children = (
+				C46DD6CD19709082005E3F27 /* FlockFocus */,
+				C46DD6F619709083005E3F27 /* FlockFocusTests */,
+				C46DD6C419709082005E3F27 /* Frameworks */,
+				C46DD6C319709082005E3F27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C46DD6C319709082005E3F27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C46DD6C219709082005E3F27 /* FlockFocus.app */,
+				C46DD6EE19709083005E3F27 /* FlockFocusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C46DD6C419709082005E3F27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C46DD6C519709082005E3F27 /* Foundation.framework */,
+				C46DD6C719709082005E3F27 /* CoreGraphics.framework */,
+				C46DD6C919709082005E3F27 /* UIKit.framework */,
+				C46DD6CB19709082005E3F27 /* CoreData.framework */,
+				C46DD6EF19709083005E3F27 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C46DD6CD19709082005E3F27 /* FlockFocus */ = {
+			isa = PBXGroup;
+			children = (
+				C46DD6D619709082005E3F27 /* AppDelegate.h */,
+				C46DD6D719709082005E3F27 /* AppDelegate.m */,
+				C46DD6D919709083005E3F27 /* Main_iPhone.storyboard */,
+				C46DD6DC19709083005E3F27 /* Main_iPad.storyboard */,
+				C46DD6E219709083005E3F27 /* MasterViewController.h */,
+				C46DD6E319709083005E3F27 /* MasterViewController.m */,
+				C46DD6E519709083005E3F27 /* DetailViewController.h */,
+				C46DD6E619709083005E3F27 /* DetailViewController.m */,
+				C46DD6E819709083005E3F27 /* Images.xcassets */,
+				C46DD6DF19709083005E3F27 /* FlockFocus.xcdatamodeld */,
+				C46DD6CE19709082005E3F27 /* Supporting Files */,
+			);
+			path = FlockFocus;
+			sourceTree = "<group>";
+		};
+		C46DD6CE19709082005E3F27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C46DD6CF19709082005E3F27 /* FlockFocus-Info.plist */,
+				C46DD6D019709082005E3F27 /* InfoPlist.strings */,
+				C46DD6D319709082005E3F27 /* main.m */,
+				C46DD6D519709082005E3F27 /* FlockFocus-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C46DD6F619709083005E3F27 /* FlockFocusTests */ = {
+			isa = PBXGroup;
+			children = (
+				C46DD6FC19709083005E3F27 /* FlockFocusTests.m */,
+				C46DD6F719709083005E3F27 /* Supporting Files */,
+			);
+			path = FlockFocusTests;
+			sourceTree = "<group>";
+		};
+		C46DD6F719709083005E3F27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C46DD6F819709083005E3F27 /* FlockFocusTests-Info.plist */,
+				C46DD6F919709083005E3F27 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C46DD6C119709082005E3F27 /* FlockFocus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C46DD70019709083005E3F27 /* Build configuration list for PBXNativeTarget "FlockFocus" */;
+			buildPhases = (
+				C46DD6BE19709082005E3F27 /* Sources */,
+				C46DD6BF19709082005E3F27 /* Frameworks */,
+				C46DD6C019709082005E3F27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlockFocus;
+			productName = FlockFocus;
+			productReference = C46DD6C219709082005E3F27 /* FlockFocus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C46DD6ED19709083005E3F27 /* FlockFocusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C46DD70319709083005E3F27 /* Build configuration list for PBXNativeTarget "FlockFocusTests" */;
+			buildPhases = (
+				C46DD6EA19709083005E3F27 /* Sources */,
+				C46DD6EB19709083005E3F27 /* Frameworks */,
+				C46DD6EC19709083005E3F27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C46DD6F519709083005E3F27 /* PBXTargetDependency */,
+			);
+			name = FlockFocusTests;
+			productName = FlockFocusTests;
+			productReference = C46DD6EE19709083005E3F27 /* FlockFocusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C46DD6BA19709082005E3F27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Tara Neier";
+				TargetAttributes = {
+					C46DD6ED19709083005E3F27 = {
+						TestTargetID = C46DD6C119709082005E3F27;
+					};
+				};
+			};
+			buildConfigurationList = C46DD6BD19709082005E3F27 /* Build configuration list for PBXProject "FlockFocus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C46DD6B919709082005E3F27;
+			productRefGroup = C46DD6C319709082005E3F27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C46DD6C119709082005E3F27 /* FlockFocus */,
+				C46DD6ED19709083005E3F27 /* FlockFocusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C46DD6C019709082005E3F27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46DD6DE19709083005E3F27 /* Main_iPad.storyboard in Resources */,
+				C46DD6E919709083005E3F27 /* Images.xcassets in Resources */,
+				C46DD6DB19709083005E3F27 /* Main_iPhone.storyboard in Resources */,
+				C46DD6D219709082005E3F27 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C46DD6EC19709083005E3F27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46DD6FB19709083005E3F27 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C46DD6BE19709082005E3F27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46DD6E719709083005E3F27 /* DetailViewController.m in Sources */,
+				C46DD6E419709083005E3F27 /* MasterViewController.m in Sources */,
+				C46DD6D819709082005E3F27 /* AppDelegate.m in Sources */,
+				C46DD6E119709083005E3F27 /* FlockFocus.xcdatamodeld in Sources */,
+				C46DD6D419709082005E3F27 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C46DD6EA19709083005E3F27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46DD6FD19709083005E3F27 /* FlockFocusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C46DD6F519709083005E3F27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C46DD6C119709082005E3F27 /* FlockFocus */;
+			targetProxy = C46DD6F419709083005E3F27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C46DD6D019709082005E3F27 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C46DD6D119709082005E3F27 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C46DD6D919709083005E3F27 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C46DD6DA19709083005E3F27 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C46DD6DC19709083005E3F27 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C46DD6DD19709083005E3F27 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		C46DD6F919709083005E3F27 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C46DD6FA19709083005E3F27 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C46DD6FE19709083005E3F27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C46DD6FF19709083005E3F27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C46DD70119709083005E3F27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlockFocus/FlockFocus-Prefix.pch";
+				INFOPLIST_FILE = "FlockFocus/FlockFocus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C46DD70219709083005E3F27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlockFocus/FlockFocus-Prefix.pch";
+				INFOPLIST_FILE = "FlockFocus/FlockFocus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C46DD70419709083005E3F27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FlockFocus.app/FlockFocus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlockFocus/FlockFocus-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FlockFocusTests/FlockFocusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C46DD70519709083005E3F27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FlockFocus.app/FlockFocus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlockFocus/FlockFocus-Prefix.pch";
+				INFOPLIST_FILE = "FlockFocusTests/FlockFocusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C46DD6BD19709082005E3F27 /* Build configuration list for PBXProject "FlockFocus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C46DD6FE19709083005E3F27 /* Debug */,
+				C46DD6FF19709083005E3F27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C46DD70019709083005E3F27 /* Build configuration list for PBXNativeTarget "FlockFocus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C46DD70119709083005E3F27 /* Debug */,
+				C46DD70219709083005E3F27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C46DD70319709083005E3F27 /* Build configuration list for PBXNativeTarget "FlockFocusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C46DD70419709083005E3F27 /* Debug */,
+				C46DD70519709083005E3F27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C46DD6DF19709083005E3F27 /* FlockFocus.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C46DD6E019709083005E3F27 /* FlockFocus.xcdatamodel */,
+			);
+			currentVersion = C46DD6E019709083005E3F27 /* FlockFocus.xcdatamodel */;
+			path = FlockFocus.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C46DD6BA19709082005E3F27 /* Project object */;
+}
