@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64D498EE51C14FB2861D89B4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE5FC1F9F294315B18AB5CB /* libPods.a */; };
 		C46DD6C619709082005E3F27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46DD6C519709082005E3F27 /* Foundation.framework */; };
 		C46DD6C819709082005E3F27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46DD6C719709082005E3F27 /* CoreGraphics.framework */; };
 		C46DD6CA19709082005E3F27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46DD6C919709082005E3F27 /* UIKit.framework */; };
@@ -26,6 +27,8 @@
 		C46DD6F319709083005E3F27 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46DD6CB19709082005E3F27 /* CoreData.framework */; };
 		C46DD6FB19709083005E3F27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C46DD6F919709083005E3F27 /* InfoPlist.strings */; };
 		C46DD6FD19709083005E3F27 /* FlockFocusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C46DD6FC19709083005E3F27 /* FlockFocusTests.m */; };
+		C46DD70819709403005E3F27 /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = C46DD70719709403005E3F27 /* Bird.m */; };
+		C46DD70B1970D42F005E3F27 /* HttpClientSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = C46DD70A1970D42F005E3F27 /* HttpClientSubclass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		59C9B703EF1E47FEAE2C9D8A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C46DD6C219709082005E3F27 /* FlockFocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlockFocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C46DD6C519709082005E3F27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C46DD6C719709082005E3F27 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,6 +67,11 @@
 		C46DD6F819709083005E3F27 /* FlockFocusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlockFocusTests-Info.plist"; sourceTree = "<group>"; };
 		C46DD6FA19709083005E3F27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C46DD6FC19709083005E3F27 /* FlockFocusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlockFocusTests.m; sourceTree = "<group>"; };
+		C46DD70619709403005E3F27 /* Bird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bird.h; sourceTree = "<group>"; };
+		C46DD70719709403005E3F27 /* Bird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
+		C46DD7091970D42F005E3F27 /* HttpClientSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClientSubclass.h; sourceTree = "<group>"; };
+		C46DD70A1970D42F005E3F27 /* HttpClientSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClientSubclass.m; sourceTree = "<group>"; };
+		DEE5FC1F9F294315B18AB5CB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +83,7 @@
 				C46DD6CC19709082005E3F27 /* CoreData.framework in Frameworks */,
 				C46DD6CA19709082005E3F27 /* UIKit.framework in Frameworks */,
 				C46DD6C619709082005E3F27 /* Foundation.framework in Frameworks */,
+				64D498EE51C14FB2861D89B4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +108,7 @@
 				C46DD6F619709083005E3F27 /* FlockFocusTests */,
 				C46DD6C419709082005E3F27 /* Frameworks */,
 				C46DD6C319709082005E3F27 /* Products */,
+				59C9B703EF1E47FEAE2C9D8A /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +129,7 @@
 				C46DD6C919709082005E3F27 /* UIKit.framework */,
 				C46DD6CB19709082005E3F27 /* CoreData.framework */,
 				C46DD6EF19709083005E3F27 /* XCTest.framework */,
+				DEE5FC1F9F294315B18AB5CB /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,10 +139,14 @@
 			children = (
 				C46DD6D619709082005E3F27 /* AppDelegate.h */,
 				C46DD6D719709082005E3F27 /* AppDelegate.m */,
+				C46DD70619709403005E3F27 /* Bird.h */,
+				C46DD70719709403005E3F27 /* Bird.m */,
 				C46DD6D919709083005E3F27 /* Main_iPhone.storyboard */,
 				C46DD6DC19709083005E3F27 /* Main_iPad.storyboard */,
 				C46DD6E219709083005E3F27 /* MasterViewController.h */,
 				C46DD6E319709083005E3F27 /* MasterViewController.m */,
+				C46DD7091970D42F005E3F27 /* HttpClientSubclass.h */,
+				C46DD70A1970D42F005E3F27 /* HttpClientSubclass.m */,
 				C46DD6E519709083005E3F27 /* DetailViewController.h */,
 				C46DD6E619709083005E3F27 /* DetailViewController.m */,
 				C46DD6E819709083005E3F27 /* Images.xcassets */,
@@ -176,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C46DD70019709083005E3F27 /* Build configuration list for PBXNativeTarget "FlockFocus" */;
 			buildPhases = (
+				7E7B0744756F4DE9B5C01E17 /* Check Pods Manifest.lock */,
 				C46DD6BE19709082005E3F27 /* Sources */,
 				C46DD6BF19709082005E3F27 /* Frameworks */,
 				C46DD6C019709082005E3F27 /* Resources */,
+				6C916BA44162485CA92A9F0F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,6 +280,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6C916BA44162485CA92A9F0F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E7B0744756F4DE9B5C01E17 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C46DD6BE19709082005E3F27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -269,9 +320,11 @@
 			files = (
 				C46DD6E719709083005E3F27 /* DetailViewController.m in Sources */,
 				C46DD6E419709083005E3F27 /* MasterViewController.m in Sources */,
+				C46DD70819709403005E3F27 /* Bird.m in Sources */,
 				C46DD6D819709082005E3F27 /* AppDelegate.m in Sources */,
 				C46DD6E119709083005E3F27 /* FlockFocus.xcdatamodeld in Sources */,
 				C46DD6D419709082005E3F27 /* main.m in Sources */,
+				C46DD70B1970D42F005E3F27 /* HttpClientSubclass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +456,7 @@
 		};
 		C46DD70119709083005E3F27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59C9B703EF1E47FEAE2C9D8A /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -416,6 +470,7 @@
 		};
 		C46DD70219709083005E3F27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59C9B703EF1E47FEAE2C9D8A /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -486,6 +541,7 @@
 				C46DD70219709083005E3F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C46DD70319709083005E3F27 /* Build configuration list for PBXNativeTarget "FlockFocusTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +550,7 @@
 				C46DD70519709083005E3F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
