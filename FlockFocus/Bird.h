@@ -12,5 +12,7 @@
 
 
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *egg_count;
+
 
 @end

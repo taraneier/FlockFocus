@@ -37,6 +37,7 @@
 
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"name"] description];
+        self.eggcount.text = [[self.detailItem valueForKey:@"egg_count"] description];
     }
 }
 

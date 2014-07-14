@@ -10,4 +10,5 @@
 
 @implementation Bird
     @synthesize name = _name;
+    @synthesize egg_count = _egg_count;
 @end

@@ -15,7 +15,7 @@
 #import "HttpClientSubclass.h"
 
 @interface MasterViewController ()
-//- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
     @property (nonatomic, strong) NSArray *birds ;
 
 @end
@@ -60,7 +60,8 @@
     
     // setup object mappings
     RKObjectMapping *birdMapping = [RKObjectMapping mappingForClass:[Bird class]];
-    [birdMapping addAttributeMappingsFromArray:@[@"name"]];
+    [birdMapping addAttributeMappingsFromArray:@[@"name", @"egg_count"]];
+//    [birdMapping addAttributeMappingsFromArray:@[]
     
     // register mappings with the provider using a response descriptor
     RKResponseDescriptor *responseDescriptor =
@@ -185,7 +186,8 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+//        NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+        Bird *object = [self.birds objectAtIndex:indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
     }
 }
