@@ -47,7 +47,7 @@
 - (void)configureRestKit
 {
     // initialize AFNetworking HTTPClient
-    NSURL *baseURL = [NSURL URLWithString:@"http://127.0.0.1:8000"];
+    NSURL *baseURL = [NSURL URLWithString:@"http://api-flockstats.rhcloud.com"];
     AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
     [client setAuthorizationHeaderWithUsername:@"tneier" password:@"beagle99"];
 //    HttpClientSubclass *client = [[HttpClientSubclass alloc] initWithBaseURL:baseURL];
@@ -67,8 +67,8 @@
     RKResponseDescriptor *responseDescriptor =
     [RKResponseDescriptor responseDescriptorWithMapping:birdMapping
                                                  method:RKRequestMethodGET
-                                            pathPattern:@"/birds/"
-                                                keyPath:@"results"
+                                            pathPattern:@"/api/birds/"
+                                                keyPath:@""
                                             statusCodes:[NSIndexSet indexSetWithIndex:200]];
     
     [objectManager addResponseDescriptor:responseDescriptor];
@@ -86,7 +86,7 @@
 //                                  @"categoryId" : @"4bf58dd8d48988d1e0931735",
                                   @"v" : @"20140118"};
     
-    [[RKObjectManager sharedManager] getObjectsAtPath:@"/birds"
+    [[RKObjectManager sharedManager] getObjectsAtPath:@"/api/birds"
                                            parameters:queryParams
                                               success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
                                                   _birds = mappingResult.array;
